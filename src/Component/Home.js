@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Header from "./Header";
 import Banner from './Banner';
 import Earn from './Earn';
+import Models from './Models';
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       
     </Container>
     <Earn/>
+    <Models/>
     </React.Fragment>
  
   );
