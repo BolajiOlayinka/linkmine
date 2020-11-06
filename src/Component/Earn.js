@@ -99,17 +99,15 @@ const StyledInput = styled.input`
   border-style: none;
   border-color: transparent;
   border: none;
-  :focus {
-    border: none !important;
-    border-color: transparent !important;
-    border-style: none !important;
-    box-shadow: none;
+  :active{
+      outline:0;
+      border:none;
+      -moz-outline-style: none;
   }
-  :active {
-    border: none !important;
-    border-color: transparent !important;
-    border-style: none !important;
-    box-shadow: none;
+  :focus{
+    outline:0;
+      border:none;
+      -moz-outline-style: none;
   }
 `;
 const ThetaDiv = styled.div`
@@ -132,6 +130,16 @@ const CalcBtn = styled.button`
   height: 60px;
   line-height: 60px;
   outline: none;
+  :active{
+      outline:0;
+      border:none;
+      -moz-outline-style: none;
+  }
+  :focus{
+    outline:0;
+      border:none;
+      -moz-outline-style: none;
+  }
 `;
 const Output = styled.div`
  padding-left:30px;
