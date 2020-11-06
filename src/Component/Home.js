@@ -4,6 +4,8 @@ import Header from "./Header";
 import Banner from './Banner';
 import Earn from './Earn';
 import Models from './Models';
+import How from './How';
+import Plan from './Plan';
 
 export default function Home() {
   return (
@@ -14,6 +16,8 @@ export default function Home() {
     </Container>
     <Earn/>
     <Models/>
+    <How/>
+    <Plan/>
     </React.Fragment>
  
   );

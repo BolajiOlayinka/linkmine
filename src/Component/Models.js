@@ -10,14 +10,14 @@ export default function Models() {
   return (
     <Wrapper>
       <PreHeader>An Entirely New Way To Earn Revenue</PreHeader>
-      <TitleHead>Help You Get The Profit Arsing From Bitcoin</TitleHead>
+      <TitleHead>Help You Get The Profit Arising From Bitcoin</TitleHead>
       <div className="row">
         <div className="col-lg-4 col-md-4">
           <Card>
             <CardImage src={Feature1} alt="featured linkmine" />
             <CardTitle>Multiple Income Models</CardTitle>
             <CardSubTitle>
-              Users have a variety of revenue models to choose from
+              Users have a variety of revenue models to choose from, starting with as low as $50
             </CardSubTitle>
             <CardArrow>
               <FontAwesomeIcon icon={faAngleRight} />{" "}
@@ -29,8 +29,7 @@ export default function Models() {
             <CardImage src={Feature2} alt="featured linkmine" />
             <CardTitle>Rewarded Experience</CardTitle>
             <CardSubTitle>
-              Users have a variety of revenue models to choose from with as low
-              as $50
+            Users can get valuable rewards by mining and introducing new users
             </CardSubTitle>
             <CardArrow>
               <FontAwesomeIcon icon={faAngleRight} />{" "}
@@ -52,7 +51,7 @@ export default function Models() {
         
       </div>
       <StartContainer>
-          <StartButton href="#"> Get Started</StartButton>
+          <StartButton href="#"> Get Started  <FontAwesomeIcon className="ml-1" icon={faAngleRight} /></StartButton>
         </StartContainer>
     </Wrapper>
   );
