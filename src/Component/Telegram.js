@@ -92,7 +92,7 @@ const Wrapper = styled.div`
   }
 `;
 const TelegramImage = styled.img`
-  opacity: 20%;
+  opacity: 5%;
   position: absolute;
   width: 250px;
   height: 250px;

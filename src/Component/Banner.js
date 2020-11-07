@@ -43,7 +43,7 @@ const SideTriangle = styled.div`
   height: 0;
   border-top: 200px solid transparent;
   border-right: 160px solid var(--mainAsh);
-  opacity: 10%;
+  opacity: 6%;
   border-bottom: 200px solid transparent;
   position: absolute;
   right: 0;
