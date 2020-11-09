@@ -17,7 +17,8 @@ export default function Models() {
             <CardImage src={Feature1} alt="featured linkmine" />
             <CardTitle>Multiple Income Models</CardTitle>
             <CardSubTitle>
-              Users have a variety of revenue models to choose from, starting with as low as $50
+              Users have a variety of revenue models to choose from, starting
+              with as low as $50
             </CardSubTitle>
             <CardArrow>
               <FontAwesomeIcon icon={faAngleRight} />{" "}
@@ -29,7 +30,7 @@ export default function Models() {
             <CardImage src={Feature2} alt="featured linkmine" />
             <CardTitle>Rewarded Experience</CardTitle>
             <CardSubTitle>
-            Users can get valuable rewards by mining and introducing new users
+              Users can get valuable rewards by mining and introducing new users
             </CardSubTitle>
             <CardArrow>
               <FontAwesomeIcon icon={faAngleRight} />{" "}
@@ -48,11 +49,13 @@ export default function Models() {
             </CardArrow>
           </Card>
         </div>
-        
       </div>
       <StartContainer>
-          <StartButton href="#"> Get Started  <FontAwesomeIcon className="ml-1" icon={faAngleRight} /></StartButton>
-        </StartContainer>
+        <StartButton href="#">
+          {" "}
+          Get Started <FontAwesomeIcon className="ml-1" icon={faAngleRight} />
+        </StartButton>
+      </StartContainer>
     </Wrapper>
   );
 }
@@ -65,11 +68,11 @@ const Wrapper = styled.div`
     width: 1200px;
     margin: auto;
   }
-  @media(max-width:425px){
-    padding-top:80px;
-    padding-bottom:80px;
-    padding-left:15px;
-    padding-right:15px
+  @media (max-width: 425px) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 `;
 const PreHeader = styled.p`
@@ -77,8 +80,8 @@ const PreHeader = styled.p`
   font-sze: 18px;
   margin-bottom: 20px;
   text-align: center;
-  @media(max-width:425px){
-    font-size:12px;
+  @media (max-width: 425px) {
+    font-size: 12px;
   }
 `;
 const TitleHead = styled.h2`
@@ -86,8 +89,8 @@ const TitleHead = styled.h2`
   color: white;
   text-align: center;
   font-family: MontserratBold;
-  @media(max-width:425px){
-    font-size:26px;
+  @media (max-width: 425px) {
+    font-size: 26px;
   }
 `;
 const Card = styled.div`
@@ -99,7 +102,6 @@ const Card = styled.div`
   margin-right: 10px;
   padding-left: 10px;
   padding-right: 10px;
-  
 `;
 const CardTitle = styled.div`
   font-size: 24px;
@@ -131,21 +133,20 @@ const CardArrow = styled.div`
 `;
 const StartContainer = styled.div`
   text-align: center;
-  margin-top:80px;
+  margin-top: 80px;
 `;
 const StartButton = styled.a`
   background: #00a8ff;
   border-radius: 30px;
   border: none;
   color: white;
-  padding:20px 40px;
+  padding: 20px 40px;
   height: 60px;
   line-height: 60px;
   outline: none;
-  
-  :hover{
-      text-decoration:none;
-      background-color:#00a8ff;
-      
+
+  :hover {
+    text-decoration: none;
+    background-color: #00a8ff;
   }
 `;

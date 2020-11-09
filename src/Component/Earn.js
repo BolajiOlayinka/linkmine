@@ -50,10 +50,10 @@ export default class Earn extends Component {
                 </Output>
               </InputSection>
               <SmallOutput>
-              <p>Estimated 24 Hour Revenue</p>
-                  <CalResult>
-                    {this.state.calcResult} (${this.state.resultDollars})
-                  </CalResult>
+                <p>Estimated 24 Hour Revenue</p>
+                <CalResult>
+                  {this.state.calcResult} (${this.state.resultDollars})
+                </CalResult>
               </SmallOutput>
             </div>
           </div>
@@ -77,9 +77,9 @@ const Wrapper = styled.div`
       font-size: 43px;
     }
   }
-  @media(max-width:425px){
-    padding-top:30px;
-    padding-bottom:30px;
+  @media (max-width: 425px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 `;
 const Container = styled.div`
@@ -93,18 +93,18 @@ const Container = styled.div`
 const EarnTitle = styled.h2`
   width: 100%;
 
-  @media(max-width:425px){
-    width:70%;
-    text-align:center;
-    margin-bottom:10px;
-    margin:auto;
-    font-weight:bold;
+  @media (max-width: 425px) {
+    width: 70%;
+    text-align: center;
+    margin-bottom: 10px;
+    margin: auto;
+    font-weight: bold;
   }
 `;
 const InputSection = styled.div`
   display: flex;
-  @media(max-width:425px){
-    margin-top:30px;
+  @media (max-width: 425px) {
+    margin-top: 30px;
   }
 `;
 const StyledInput = styled.input`
@@ -120,24 +120,24 @@ const StyledInput = styled.input`
   border-style: none;
   border-color: transparent;
   border: none;
-  :active{
-      outline:0;
-      border:none;
-      -moz-outline-style: none;
+  :active {
+    outline: 0;
+    border: none;
+    -moz-outline-style: none;
   }
-  :focus{
-    outline:0;
-      border:none;
-      -moz-outline-style: none;
+  :focus {
+    outline: 0;
+    border: none;
+    -moz-outline-style: none;
   }
-  @media(max-width:768px){
-    width:50px;
+  @media (max-width: 768px) {
+    width: 50px;
   }
-  @media(max-width:425px){
+  @media (max-width: 425px) {
     width: 120px;
-    height:50px;
-    line-height:50px;
-    font-size:12px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 12px;
   }
 `;
 const ThetaDiv = styled.div`
@@ -149,10 +149,10 @@ const ThetaDiv = styled.div`
   width: 200px;
   padding-right: 30px;
   margin-right: -30px;
-  @media(max-width:425px){
-    height:50px;
-    line-height:50px;
-    font-size:12px;
+  @media (max-width: 425px) {
+    height: 50px;
+    line-height: 50px;
+    font-size: 12px;
   }
 `;
 
@@ -165,44 +165,44 @@ const CalcBtn = styled.button`
   height: 60px;
   line-height: 60px;
   outline: none;
-  :active{
-      outline:0;
-      border:none;
-      -moz-outline-style: none;
+  :active {
+    outline: 0;
+    border: none;
+    -moz-outline-style: none;
   }
-  :focus{
-    outline:0;
-      border:none;
-      -moz-outline-style: none;
+  :focus {
+    outline: 0;
+    border: none;
+    -moz-outline-style: none;
   }
-  @media(max-width:425px){
-padding:0 30px;
-height:50px;
-line-height:50px;
-font-size:12px;
+  @media (max-width: 425px) {
+    padding: 0 30px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 12px;
   }
 `;
 const Output = styled.div`
- padding-left:30px;
+  padding-left: 30px;
   p {
     font-size: 16px;
     color: #c6c9e5;
   }
   color: white;
-  @media(max-width:576px){
-    display:none;
+  @media (max-width: 576px) {
+    display: none;
   }
 `;
-const SmallOutput =styled.div `
-color:white;
-margin-top:10px;
-text-align:center;
-p{
-  font-size:12px;
-  color:#c6c9e5;
-}
-@media(min-width:575.9px){
-  display:none
-}
-`
+const SmallOutput = styled.div`
+  color: white;
+  margin-top: 10px;
+  text-align: center;
+  p {
+    font-size: 12px;
+    color: #c6c9e5;
+  }
+  @media (min-width: 575.9px) {
+    display: none;
+  }
+`;
 const CalResult = styled.div``;

@@ -62,8 +62,8 @@ const Wrapper = styled.div`
   padding-left: 5px;
   padding-right: 5px;
   padding-bottom: 120px;
-  @media(max-width:425px){
-    padding-bottom:80px;
+  @media (max-width: 425px) {
+    padding-bottom: 80px;
   }
 `;
 const PreHeader = styled.div`
@@ -72,9 +72,9 @@ const PreHeader = styled.div`
   margin-top: 110px;
   margin-bottom: 20px;
   text-align: center;
-  @media(max-width:425px){
-    margin-top:80px;
-    font-size:12px;
+  @media (max-width: 425px) {
+    margin-top: 80px;
+    font-size: 12px;
   }
 `;
 const Header = styled.div`
@@ -82,8 +82,8 @@ const Header = styled.div`
   color: white;
   text-align: center;
   font-family: MontserratBold;
-  @media(max-width:425px){
-    font-size:26px;
+  @media (max-width: 425px) {
+    font-size: 26px;
   }
 `;
 const Large = styled.div`
@@ -134,15 +134,15 @@ const VideoButton = styled.button`
   border: none;
   background-color: #00a8ff;
   color: white;
-  :active{
-      outline:0;
-      border:none;
-      -moz-outline-style: none;
+  :active {
+    outline: 0;
+    border: none;
+    -moz-outline-style: none;
   }
-  :focus{
-    outline:0;
-      border:none;
-      -moz-outline-style: none;
+  :focus {
+    outline: 0;
+    border: none;
+    -moz-outline-style: none;
   }
   @media (max-width: 768px) {
     width: 80%;
