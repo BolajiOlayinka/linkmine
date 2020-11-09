@@ -1,14 +1,14 @@
-import React,{useEffect, useState} from "react";
+import React from "react";
 import styled from "styled-components";
 import Logo from "../assets/linkmine.png";
 import {Link} from 'react-router-dom';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 export default function Header() {
-  const [isOpen, setIsOpen] = useState();
+  // const [isOpen, setIsOpen] = useState();
 
-  const toggle = () => setIsOpen(!isOpen);
+  // const toggle = () => setIsOpen(!isOpen);
   // const [isSmallScreen, setIsSmallScreen] = useState(false);
   // useEffect(() => {
   //   const mediaQuery = window.matchMedia("max-width:600px");
