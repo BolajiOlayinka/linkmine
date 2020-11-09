@@ -12,8 +12,9 @@ export default function Home() {
   return (
     <React.Fragment>
       {" "}
+      <Header />
       <Container>
-        <Header />
+        
         <Banner />
       </Container>
       <Earn />

@@ -29,6 +29,13 @@ const Title = styled.h2`
   margin-bottom: 80px;
   line-height: 1.5;
   text-align: center;
+  @media(max-width:576px){
+    font-size:36px;
+  }
+  @media(max-width:425px){
+    font-size:30px;
+    margin-bottom:30px;
+  }
 `;
 const SubTitle = styled.p`
   width: 80%;
@@ -37,6 +44,12 @@ const SubTitle = styled.p`
   text-align: center;
   font-size: 20px;
   line-height: 28px;
+  @media(max-width:425px){
+    width:90%;
+    font-size:12px;
+    margin-bottom:20px;
+    margin:auto;
+  }
 `;
 const SideTriangle = styled.div`
   width: 0;
@@ -60,5 +73,8 @@ const ImageContent = styled.div`
     img {
       width: 600px;
     }
+  }
+  @media(max-width:475px){
+    margin-top:30px;
   }
 `;

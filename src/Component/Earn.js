@@ -32,7 +32,7 @@ export default class Earn extends Component {
             <div className="col-lg-3 col-md-3 col-sm-6 col-12">
               <EarnTitle>How Much Will I Earn ?</EarnTitle>
             </div>
-            <div className="col-lg-9 col-md-8 col-sm-6 col-12 align-self-center">
+            <div className="col-lg-9 col-md-9 col-sm-6 col-12 align-self-center">
               <InputSection>
                 <StyledInput
                   type="number"
@@ -49,6 +49,12 @@ export default class Earn extends Component {
                   </CalResult>
                 </Output>
               </InputSection>
+              <SmallOutput>
+              <p>Estimated 24 Hour Revenue</p>
+                  <CalResult>
+                    {this.state.calcResult} (${this.state.resultDollars})
+                  </CalResult>
+              </SmallOutput>
             </div>
           </div>
         </Container>
@@ -71,6 +77,10 @@ const Wrapper = styled.div`
       font-size: 43px;
     }
   }
+  @media(max-width:425px){
+    padding-top:30px;
+    padding-bottom:30px;
+  }
 `;
 const Container = styled.div`
   padding-left: 15px;
@@ -81,10 +91,21 @@ const Container = styled.div`
   }
 `;
 const EarnTitle = styled.h2`
-  width: 100%
+  width: 100%;
+
+  @media(max-width:425px){
+    width:70%;
+    text-align:center;
+    margin-bottom:10px;
+    margin:auto;
+    font-weight:bold;
+  }
 `;
 const InputSection = styled.div`
   display: flex;
+  @media(max-width:425px){
+    margin-top:30px;
+  }
 `;
 const StyledInput = styled.input`
   width: 160px;
@@ -109,6 +130,15 @@ const StyledInput = styled.input`
       border:none;
       -moz-outline-style: none;
   }
+  @media(max-width:768px){
+    width:50px;
+  }
+  @media(max-width:425px){
+    width: 120px;
+    height:50px;
+    line-height:50px;
+    font-size:12px;
+  }
 `;
 const ThetaDiv = styled.div`
   background: #1e2472;
@@ -119,6 +149,11 @@ const ThetaDiv = styled.div`
   width: 200px;
   padding-right: 30px;
   margin-right: -30px;
+  @media(max-width:425px){
+    height:50px;
+    line-height:50px;
+    font-size:12px;
+  }
 `;
 
 const CalcBtn = styled.button`
@@ -140,6 +175,12 @@ const CalcBtn = styled.button`
       border:none;
       -moz-outline-style: none;
   }
+  @media(max-width:425px){
+padding:0 30px;
+height:50px;
+line-height:50px;
+font-size:12px;
+  }
 `;
 const Output = styled.div`
  padding-left:30px;
@@ -148,5 +189,20 @@ const Output = styled.div`
     color: #c6c9e5;
   }
   color: white;
+  @media(max-width:576px){
+    display:none;
+  }
 `;
+const SmallOutput =styled.div `
+color:white;
+margin-top:10px;
+text-align:center;
+p{
+  font-size:12px;
+  color:#c6c9e5;
+}
+@media(min-width:575.9px){
+  display:none
+}
+`
 const CalResult = styled.div``;

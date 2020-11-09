@@ -90,6 +90,14 @@ const Wrapper = styled.div`
     width: 1200px;
     margin: auto;
   }
+  @media(max-width:576px){
+    flex-direction:column;
+    padding-top:60px;
+    padding-left:15px;
+    padding-right:15px;
+    padding-bottom:60px;
+
+  }
 `;
 const TelegramImage = styled.img`
   opacity: 5%;
@@ -109,6 +117,19 @@ const SectionOne = styled.div`
     font-weight: bold;
     width: 70%;
     line-height: 52px;
+  }
+  @media(max-width:425px){
+    p{
+      font-size:16px;
+      line-height:22px;
+      
+    }
+    h2{
+      font-size:28px;
+      line-height:36px;
+      width:100%;
+      padding-bottom:50px;
+    }
   }
 `;
 const SectionTwo = styled.div``;
@@ -142,11 +163,22 @@ const QualityMining = styled.div`
     color: white;
     font-weight: bold;
   }
+  @media(max-width:425px){
+    padding-bottom:30px;
+    h2{
+      font-size:30px;
+      line-height:42px;
+    }
+  }
 `;
 const LeftParagraph = styled.div`
   color: white;
   font-size: 16px;
   margin-top: 30px;
+  @media(max-width:425px){
+    font-size:14px;
+    line-height:26px;
+  }
 `;
 const RightParagraph = styled.div`
   line-height: 2;
@@ -191,6 +223,17 @@ const Footer = styled.div`
     font-size: 16px;
     width: 58%;
     margin: auto;
+
+  }
+  @media(max-width:425px){
+    p{
+      width:90%;
+      font-size:14px;
+      line-height:20px;
+      margin:auto;
+      text-align:justify;
+      padding-bottom:30px;
+    }
   }
 `;
 const ScrollUp = styled.button`

@@ -62,6 +62,9 @@ const Wrapper = styled.div`
   padding-left: 5px;
   padding-right: 5px;
   padding-bottom: 120px;
+  @media(max-width:425px){
+    padding-bottom:80px;
+  }
 `;
 const PreHeader = styled.div`
   color: #00a8ff;
@@ -69,12 +72,19 @@ const PreHeader = styled.div`
   margin-top: 110px;
   margin-bottom: 20px;
   text-align: center;
+  @media(max-width:425px){
+    margin-top:80px;
+    font-size:12px;
+  }
 `;
 const Header = styled.div`
   font-size: 50px;
   color: white;
   text-align: center;
   font-family: MontserratBold;
+  @media(max-width:425px){
+    font-size:26px;
+  }
 `;
 const Large = styled.div`
   text-align: center;

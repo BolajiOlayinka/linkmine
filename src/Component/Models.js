@@ -65,18 +65,30 @@ const Wrapper = styled.div`
     width: 1200px;
     margin: auto;
   }
+  @media(max-width:425px){
+    padding-top:80px;
+    padding-bottom:80px;
+    padding-left:15px;
+    padding-right:15px
+  }
 `;
 const PreHeader = styled.p`
   color: #00a8ff;
   font-sze: 18px;
   margin-bottom: 20px;
   text-align: center;
+  @media(max-width:425px){
+    font-size:12px;
+  }
 `;
 const TitleHead = styled.h2`
   font-size: 50px;
   color: white;
   text-align: center;
   font-family: MontserratBold;
+  @media(max-width:425px){
+    font-size:26px;
+  }
 `;
 const Card = styled.div`
   text-align: center;
@@ -87,6 +99,7 @@ const Card = styled.div`
   margin-right: 10px;
   padding-left: 10px;
   padding-right: 10px;
+  
 `;
 const CardTitle = styled.div`
   font-size: 24px;
