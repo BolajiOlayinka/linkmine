@@ -106,6 +106,8 @@ const Wrapper = styled.div`
   padding-top: 110px;
   background-color: var(--mainBlue);
   padding-bottom: 120px;
+  padding-left:15px;
+  padding-right:15px;
   @media (min-width: 1200px) {
     width: 1200px;
     margin: auto;

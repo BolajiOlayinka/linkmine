@@ -65,6 +65,10 @@ const Wrapper = styled.div`
   @media (max-width: 425px) {
     padding-bottom: 80px;
   }
+  @media screen and (max-width: 991.9px) and (min-width: 768px) {
+padding-bottom:40px;
+
+  }
 `;
 const PreHeader = styled.div`
   color: #00a8ff;
@@ -115,17 +119,22 @@ const Small = styled.div`
 const ProductVideoButton = styled.div`
   width: 50%;
   margin: auto;
-  @media only screen and (max-width: 1200px) and (min-width: 769px) {
-    width: 80%;
-  }
+  @media screen and (max-width: 1199px) and (min-width: 992px) {
+margin-top:30px;
 
-  @media (max-width: 768px) {
+  }
+  @media screen and (max-width: 991.9px) and (min-width: 768px) {
+margin-top:30px;
+
+  }
+  
+
+gin: auto;
+  }
+  @media (max-width: 425px) {
     width: 100%;
     text-align: center;
     margin: auto;
-  }
-  @media (max-width: 425px) {
-    text-align: center;
   }
 `;
 const VideoButton = styled.button`

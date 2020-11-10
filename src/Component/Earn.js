@@ -29,10 +29,10 @@ export default class Earn extends Component {
       <Wrapper>
         <Container>
           <div className="row">
-            <div className="col-lg-3 col-md-3 col-sm-6 col-12">
+            <div className="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-12">
               <EarnTitle>How Much Will I Earn ?</EarnTitle>
             </div>
-            <div className="col-lg-9 col-md-9 col-sm-6 col-12 align-self-center">
+            <div className="col-xl-9 col-lg-12 col-md-12 col-sm-12 col-12 align-self-center">
               <InputSection>
                 <StyledInput
                   type="number"
@@ -100,11 +100,46 @@ const EarnTitle = styled.h2`
     margin: auto;
     font-weight: bold;
   }
+  @media screen and (max-width: 1199px) and (min-width: 768px) {
+    padding-bottom:20px;
+    text-align:center;
+  }
+  @media screen and (max-width:768px) and (min-width: 575.9px) {
+    font-weight:bold;
+    padding-bottom:20px;
+    text-align:center;
+  }
+  @media(max-width:576px){
+    font-size:36px;
+    width:70%;
+    margin:auto;
+    font-weight:bold;
+    text-align:center;
+    padding-bottom:20px;
+  }
+  @media(max-width:425px){
+    font-size:30px;
+    width:90%;
+    padding-top:30px;
+  }
 `;
 const InputSection = styled.div`
   display: flex;
   @media (max-width: 425px) {
     margin-top: 30px;
+  }
+  @media(max-width:1199px){
+width:70%;
+margin:auto;
+  }
+  @media(max-width:992px){
+width:90%;
+margin:auto;
+  }
+  @media(max-width:576px){
+    width:90%;
+    margin:auto;
+    
   }
 `;
 const StyledInput = styled.input`
@@ -133,6 +168,10 @@ const StyledInput = styled.input`
   @media (max-width: 768px) {
     width: 50px;
   }
+  @media(max-width:576px){
+    width:30%;
+  }
+  
   @media (max-width: 425px) {
     width: 120px;
     height: 50px;

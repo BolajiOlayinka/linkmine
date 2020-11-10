@@ -74,6 +74,8 @@ const NavWrapper = styled.div`
     width: 1200px;
     margin: auto;
   }
+  @med
+
 `;
 const Left = styled.div`
   display: flex;

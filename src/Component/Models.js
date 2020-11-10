@@ -12,7 +12,7 @@ export default function Models() {
       <PreHeader>An Entirely New Way To Earn Revenue</PreHeader>
       <TitleHead>Help You Get The Profit Arising From Bitcoin</TitleHead>
       <div className="row">
-        <div className="col-lg-4 col-md-4">
+        <div className="col-lg-4 col-md-4 col-sm-12 col-12">
           <Card>
             <CardImage src={Feature1} alt="featured linkmine" />
             <CardTitle>Multiple Income Models</CardTitle>
@@ -25,7 +25,7 @@ export default function Models() {
             </CardArrow>
           </Card>
         </div>
-        <div className="col-lg-4 col-md-4">
+        <div className="col-lg-4 col-md-4 col-sm-12 col-12">
           <Card>
             <CardImage src={Feature2} alt="featured linkmine" />
             <CardTitle>Rewarded Experience</CardTitle>
@@ -37,7 +37,7 @@ export default function Models() {
             </CardArrow>
           </Card>
         </div>
-        <div className="col-lg-4 col-md-4">
+        <div className="col-lg-4 col-md-4 col-sm-12 col-12 ">
           <Card>
             <CardImage src={Feature3} alt="featured linkmine" />
             <CardTitle>High level Profit Margin</CardTitle>
@@ -64,9 +64,15 @@ const Wrapper = styled.div`
   padding-top: 110px;
   background-color: var(--mainBlue);
   padding-bottom: 120px;
+  padding-left:15px;
+  padding-right:15px;
   @media (min-width: 1200px) {
     width: 1200px;
     margin: auto;
+  }
+  @media screen and (max-width: 991.9px) and (min-width: 768px) {
+padding-bottom:40px;
+
   }
   @media (max-width: 425px) {
     padding-top: 80px;
@@ -92,6 +98,10 @@ const TitleHead = styled.h2`
   @media (max-width: 425px) {
     font-size: 26px;
   }
+  @media screen and (max-width: 1199px) and (min-width: 992px) {
+    width: 85%;
+    margin: auto;
+  }
 `;
 const Card = styled.div`
   text-align: center;
@@ -102,17 +112,36 @@ const Card = styled.div`
   margin-right: 10px;
   padding-left: 10px;
   padding-right: 10px;
+  @media screen and (max-width: 1199px) and (min-width: 992px) {
+height:300px;
+  }
+  @media screen and (max-width: 991.9px) and (min-width: 768px) {
+    margin-right:0px;
+    margin-left:0px;
+    height:280px;
+  }
 `;
 const CardTitle = styled.div`
   font-size: 24px;
   color: white;
   margin-bottom: 20px;
+  
+  @media screen and (max-width: 1199px) and (min-width: 992px) {
+height:70px;
+  }
 `;
 const CardSubTitle = styled.div`
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
   color: #c6c9e5;
+  height:80px;
+  @media screen and (max-width: 1199px) and (min-width: 992px) {
+height:90px;
+  }
+  @media screen and (max-width: 991.9px) and (min-width: 768px) {
+height:65px;
+  }
 `;
 const CardImage = styled.img`
   margin-top: -80px;
@@ -134,6 +163,10 @@ const CardArrow = styled.div`
 const StartContainer = styled.div`
   text-align: center;
   margin-top: 80px;
+  @media screen and (max-width: 991.9px) and (min-width: 768px) {
+margin-top:120px;
+
+  }
 `;
 const StartButton = styled.a`
   background: #00a8ff;
@@ -149,4 +182,5 @@ const StartButton = styled.a`
     text-decoration: none;
     background-color: #00a8ff;
   }
+ 
 `;
