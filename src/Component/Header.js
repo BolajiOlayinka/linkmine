@@ -43,7 +43,7 @@ export default function Header() {
           <a href="https://linkmine.vip/wallet">Wallet</a>
           <Auth>
             <Login href="">Sign in</Login>
-            <Signup href="">Sign up</Signup>
+            <Signup href="https://linkmine.vip/auth/register">Sign up</Signup>
           </Auth>
         </Right>
       </NavWrapper>
@@ -54,8 +54,8 @@ export default function Header() {
           <a href="https://linkmine.vip/financial-center">Finacial Center</a>
           <a href="https://linkmine.vip/wallet">Wallet</a>
           <Auth>
-            <Login href="">Sign in</Login>
-            <Signup href="">Sign up</Signup>
+            <Login href="https://linkmine.vip/auth/login">Sign in</Login>
+            <Signup href="https://linkmine.vip/auth/register">Sign up</Signup>
           </Auth>
         </Right>
       </SmallNavWrapper>
