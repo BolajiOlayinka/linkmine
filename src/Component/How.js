@@ -66,8 +66,7 @@ const Wrapper = styled.div`
     padding-bottom: 80px;
   }
   @media screen and (max-width: 991.9px) and (min-width: 768px) {
-padding-bottom:40px;
-
+    padding-bottom: 40px;
   }
 `;
 const PreHeader = styled.div`
@@ -76,6 +75,9 @@ const PreHeader = styled.div`
   margin-top: 110px;
   margin-bottom: 20px;
   text-align: center;
+  @media screen and (max-width: 767.9px) and (min-width: 575.9px) {
+    margin-top: 50px;
+  }
   @media (max-width: 425px) {
     margin-top: 80px;
     font-size: 12px;
@@ -86,6 +88,11 @@ const Header = styled.div`
   color: white;
   text-align: center;
   font-family: MontserratBold;
+  @media screen and (max-width: 767.9px) and (min-width: 575.9px) {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Montserrat;
+  }
   @media (max-width: 425px) {
     font-size: 26px;
   }
@@ -120,17 +127,12 @@ const ProductVideoButton = styled.div`
   width: 50%;
   margin: auto;
   @media screen and (max-width: 1199px) and (min-width: 992px) {
-margin-top:30px;
-
+    margin-top: 30px;
   }
   @media screen and (max-width: 991.9px) and (min-width: 768px) {
-margin-top:30px;
-
+    margin-top: 30px;
   }
-  
 
-gin: auto;
-  }
   @media (max-width: 425px) {
     width: 100%;
     text-align: center;
@@ -138,8 +140,10 @@ gin: auto;
   }
 `;
 const VideoButton = styled.button`
-  width: 100%;
+  width: 300px;
   padding: 2% 3%;
+  height: 60px;
+  border-radius: 30px;
   border: none;
   background-color: #00a8ff;
   color: white;
@@ -153,8 +157,20 @@ const VideoButton = styled.button`
     border: none;
     -moz-outline-style: none;
   }
-  @media (max-width: 768px) {
-    width: 80%;
+  @media screen and (max-width: 767.9px) {
+    background: #00a8ff;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    margin-top: 30px;
+    height: 60px;
+
+    outline: none;
+
+    :hover {
+      text-decoration: none;
+      background-color: #00a8ff;
+    }
   }
   @media (max-width: 425px) {
     width: 90%;
@@ -166,10 +182,12 @@ const VideoButton = styled.button`
     font-size: 16px;
     width: 300px;
   }
-  @media only screen and (max-width: 1200px) and (min-width: 769px) {
-    padding: 8px 10px;
+  @media only screen and (max-width: 1200px) and (min-width: 768px) {
     border-radius: 2px;
     font-size: 14px;
     width: 300px;
+    padding: 2% 3%;
+    height: 60px;
+    border-radius: 30px;
   }
 `;

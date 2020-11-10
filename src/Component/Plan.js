@@ -90,12 +90,13 @@ export default function Models() {
           </Card>
         </div>
         <div className="col-lg-4 col-md-4 align-self-center col-sm-6 col-12">
-          
-           
-            <StartContainer>
-              <StartButton href="#"> Get Started  <FontAwesomeIcon className="ml-1" icon={faAngleRight} /></StartButton>
-            </StartContainer>
-            
+          <StartContainer>
+            <StartButton href="#">
+              {" "}
+              Get Started{" "}
+              <FontAwesomeIcon className="ml-1" icon={faAngleRight} />
+            </StartButton>
+          </StartContainer>
         </div>
       </div>
     </Wrapper>
@@ -106,17 +107,20 @@ const Wrapper = styled.div`
   padding-top: 110px;
   background-color: var(--mainBlue);
   padding-bottom: 120px;
-  padding-left:15px;
-  padding-right:15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  @media screen and (max-width: 767.9px) and (min-width: 575.9px) {
+    padding-top: 80px;
+  }
   @media (min-width: 1200px) {
     width: 1200px;
     margin: auto;
   }
-  @media(max-width:425px){
-    padding-left:15px;
-    paddig-right:15px;
-    padding-top:80px;
-    padding-bottom:80px;
+  @media (max-width: 425px) {
+    padding-left: 15px;
+    paddig-right: 15px;
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 `;
 const PreHeader = styled.p`
@@ -124,8 +128,8 @@ const PreHeader = styled.p`
   font-sze: 18px;
   margin-bottom: 20px;
   text-align: center;
-  @media(max-width:425px){
-    font-size:12px;
+  @media (max-width: 425px) {
+    font-size: 12px;
   }
 `;
 const TitleHead = styled.h2`
@@ -133,8 +137,13 @@ const TitleHead = styled.h2`
   color: white;
   text-align: center;
   font-family: MontserratBold;
-  @media(max-width:425px){
-    font-size:26px;
+  @media screen and (max-width: 767.9px) and (min-width: 575.9px) {
+    font-size: 40px;
+    font-family: Montserrat;
+    font-weight: bold;
+  }
+  @media (max-width: 425px) {
+    font-size: 26px;
   }
 `;
 const Card = styled.div`
