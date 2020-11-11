@@ -54,7 +54,7 @@ export default function Models() {
         </div>
       </Container>
       <StartContainer>
-        <StartButton href="#">
+        <StartButton href="https://linkmine.vip/auth/register" rel="noreferrer" target="_blank">
           {" "}
           Get Started <FontAwesomeIcon className="ml-1" icon={faAngleRight} />
         </StartButton>

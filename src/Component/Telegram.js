@@ -21,7 +21,7 @@ export default function Telegram() {
           <h2>Join to Get Access to Latest Information </h2>
         </SectionOne>
         <SectionTwo>
-          <TelegramButton href="https://t.me/linkmineafrica">
+          <TelegramButton href="https://t.me/linkmineafrica" rel="noreferrer" target="_blank">
             {" "}
             Join{" "}
           </TelegramButton>
