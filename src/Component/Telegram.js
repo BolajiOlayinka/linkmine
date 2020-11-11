@@ -254,9 +254,13 @@ const ScrollUp = styled.button`
   display: flex;
   align-items: center;
   color: white;
-
+  padding-left:15px;
+  padding-right:15px;
+  padding-top:20px;
+  padding-bottom:20px;
+  border-radius:5px;
   margin: auto;
-  margin-top: 10px;
+  margin-top: 20px;
   height: 30px;
   border-color: transparent;
   border: none;
