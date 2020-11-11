@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
+import axios from "axios";
 
 export default class Earn extends Component {
   constructor() {
@@ -7,9 +8,11 @@ export default class Earn extends Component {
     this.state = {
       number: 1,
       resultBTC: 0.00000871,
+      Naira: 70,
       Dollars: 0.14,
       resultDollars: 0.14,
       calcResult: "0.00000871",
+      BTCprice: 12000,
     };
   }
 
@@ -18,12 +21,36 @@ export default class Earn extends Component {
       number: event.target.value,
     });
   };
+
   calculateBtn = () => {
     this.setState({
-      calcResult: (this.state.number * this.state.resultBTC).toFixed(8),
-      resultDollars: (this.state.Dollars * this.state.number).toFixed(2),
+      calcResult: (this.state.number * this.state.calcResult).toFixed(8),
+      Naira: (this.state.Naira * this.state.number).toFixed(2),
     });
   };
+  componentDidMount = () => {
+    axios
+      .get(
+        "https://api.nomics.com/v1/currencies/ticker?key=faad65ad538a46ad1a3a66a3db9b6386&ids=BTC"
+      )
+      .then((res) => {
+        // console.log(res.data['0']['price'])
+        let calcHashRate = (30 / res.data["0"]["price"] / 24).toFixed(8);
+        let calcNaira = (
+          (calcHashRate * res.data["0"]["price"] * 500) /
+          24
+        ).toFixed(2);
+        this.setState({
+          BTCprice: res.data["0"]["price"],
+          calcResult: calcHashRate,
+          Naira: calcNaira,
+        });
+      })
+      .catch((res) => {
+        console.log(res.err);
+      });
+  };
+  calcHash = () => {};
   render() {
     return (
       <Wrapper>
@@ -45,14 +72,14 @@ export default class Earn extends Component {
                 <Output>
                   <p>Estimated 24 Hour Revenue</p>
                   <CalResult>
-                    {this.state.calcResult} (${this.state.resultDollars})
+                    {this.state.calcResult} BTC (₦ {this.state.Naira})
                   </CalResult>
                 </Output>
               </InputSection>
               <SmallOutput>
                 <p>Estimated 24 Hour Revenue</p>
                 <CalResult>
-                  {this.state.calcResult} (${this.state.resultDollars})
+                  {this.state.calcResult} (₦ {this.state.Naira})
                 </CalResult>
               </SmallOutput>
             </div>
@@ -101,26 +128,26 @@ const EarnTitle = styled.h2`
     font-weight: bold;
   }
   @media screen and (max-width: 1199px) and (min-width: 768px) {
-    padding-bottom:20px;
-    text-align:center;
+    padding-bottom: 20px;
+    text-align: center;
   }
-  @media screen and (max-width:768px) and (min-width: 575.9px) {
-    font-weight:bold;
-    padding-bottom:20px;
-    text-align:center;
+  @media screen and (max-width: 768px) and (min-width: 575.9px) {
+    font-weight: bold;
+    padding-bottom: 20px;
+    text-align: center;
   }
-  @media(max-width:576px){
-    font-size:36px;
-    width:70%;
-    margin:auto;
-    font-weight:bold;
-    text-align:center;
-    padding-bottom:20px;
+  @media (max-width: 576px) {
+    font-size: 36px;
+    width: 70%;
+    margin: auto;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 20px;
   }
-  @media(max-width:425px){
-    font-size:30px;
-    width:90%;
-    padding-top:30px;
+  @media (max-width: 425px) {
+    font-size: 30px;
+    width: 90%;
+    padding-top: 30px;
   }
 `;
 const InputSection = styled.div`
@@ -128,21 +155,20 @@ const InputSection = styled.div`
   @media (max-width: 425px) {
     margin-top: 30px;
   }
-  @media(max-width:1199px){
-width:70%;
-margin:auto;
+  @media (max-width: 1199px) {
+    width: 70%;
+    margin: auto;
   }
-  @media(max-width:992px){
-width:90%;
-margin:auto;
+  @media (max-width: 992px) {
+    width: 90%;
+    margin: auto;
   }
-  @media(max-width:576px){
-    width:90%;
-    margin:auto;
-    
+  @media (max-width: 576px) {
+    width: 90%;
+    margin: auto;
   }
-  @media(max-width:375px){
-    width:100%;
+  @media (max-width: 375px) {
+    width: 100%;
   }
 `;
 const StyledInput = styled.input`
@@ -171,10 +197,10 @@ const StyledInput = styled.input`
   @media (max-width: 768px) {
     width: 50px;
   }
-  @media(max-width:576px){
-    width:30%;
+  @media (max-width: 576px) {
+    width: 30%;
   }
-  
+
   @media (max-width: 425px) {
     width: 120px;
     height: 50px;

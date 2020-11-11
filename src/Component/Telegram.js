@@ -49,7 +49,7 @@ export default function Telegram() {
               shows higher performance.
             </RightParagraph>
             <ButtonContainer>
-            <StartButton href="#">Get Started Now</StartButton>
+            <StartButton href="https://linkmine.vip/auth/register" rel="noreferrer" target="_blank">Get Started Now</StartButton>
             </ButtonContainer>
             
           </div>

@@ -22,7 +22,7 @@ export default function Models() {
             <CardTitle>Silver</CardTitle>
 
             <CardSubTitle>
-              Monthly Yield : <b>6%</b>
+              Monthly Yield : <b>10%</b>
             </CardSubTitle>
             <CardArrow>
               <FontAwesomeIcon icon={faAngleRight} />{" "}
@@ -37,7 +37,7 @@ export default function Models() {
             <CardTitle>Gold</CardTitle>
 
             <CardSubTitle>
-              Monthly Yield :<b>8%</b>
+              Monthly Yield :<b>10%</b>
             </CardSubTitle>
             <CardArrow>
               <FontAwesomeIcon icon={faAngleRight} />{" "}
@@ -52,7 +52,7 @@ export default function Models() {
             <CardTitle>Jasper</CardTitle>
 
             <CardSubTitle>
-              Monthly Yield : <b>9%</b>
+              Monthly Yield : <b>10%</b>
             </CardSubTitle>
             <CardArrow>
               <FontAwesomeIcon icon={faAngleRight} />{" "}
@@ -91,7 +91,7 @@ export default function Models() {
         </div>
         <div className="col-lg-4 col-md-4 align-self-center col-sm-6 col-12">
           <StartContainer>
-            <StartButton href="#">
+            <StartButton href="https://linkmine.vip/auth/register" rel="noreferrer" target="_blank">
               {" "}
               Get Started{" "}
               <FontAwesomeIcon className="ml-1" icon={faAngleRight} />
