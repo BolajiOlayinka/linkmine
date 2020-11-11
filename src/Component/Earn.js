@@ -141,6 +141,9 @@ margin:auto;
     margin:auto;
     
   }
+  @media(max-width:375px){
+    width:100%;
+  }
 `;
 const StyledInput = styled.input`
   width: 160px;

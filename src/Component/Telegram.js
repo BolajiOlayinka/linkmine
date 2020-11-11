@@ -48,8 +48,10 @@ export default function Telegram() {
               tool.As a result, AirMining consumes less power, works faster and
               shows higher performance.
             </RightParagraph>
-
+            <ButtonContainer>
             <StartButton href="#">Get Started Now</StartButton>
+            </ButtonContainer>
+            
           </div>
         </div>
       </QualityMining>
@@ -97,6 +99,7 @@ const Wrapper = styled.div`
     padding-right: 15px;
     padding-bottom: 60px;
   }
+ 
 `;
 const TelegramImage = styled.img`
   opacity: 5%;
@@ -121,12 +124,17 @@ const SectionOne = styled.div`
     p {
       font-size: 16px;
       line-height: 22px;
+      text-align:center;
+      width:80%;
+      margin:auto;
+      padding-bottom:30px;
     }
     h2 {
       font-size: 28px;
       line-height: 36px;
       width: 100%;
       padding-bottom: 50px;
+      text-align:center;
     }
   }
 `;
@@ -189,6 +197,9 @@ const RightParagraph = styled.div`
   font-size: 14px;
   color: white;
 `;
+const ButtonContainer = styled.div `
+text-align:center;
+`
 const StartButton = styled.a`
   background: #00a8ff;
   border-radius: 30px;
