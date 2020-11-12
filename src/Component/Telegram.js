@@ -18,7 +18,7 @@ export default function Telegram() {
         <TelegramImage src={TelegramIcon} alt="Telegram Icon" />
         <SectionOne>
           <p>Join Our Telegram Group to Connect with other Miners</p>
-          <h2>Join to Get Access to Latest Information </h2>
+          <h2>Join to Get Access to the Latest Information </h2>
         </SectionOne>
         <SectionTwo>
           <TelegramButton href="https://t.me/linkmineafrica" rel="noreferrer" target="_blank">
@@ -102,7 +102,10 @@ const Wrapper = styled.div`
  
 `;
 const TelegramImage = styled.img`
-  opacity: 5%;
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+  -moz-opacity:0.2;
+  -khtml-opacity: 0.2;
   position: absolute;
   width: 250px;
   height: 250px;

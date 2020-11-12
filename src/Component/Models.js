@@ -135,6 +135,9 @@ const Card = styled.div`
     margin-left: 0px;
     height: 280px;
   }
+  @media(max-width:767.9px){
+    height:260px;
+  }
 `;
 const Container = styled.div`
   @media screen and (max-width: 767.9px) and (min-width: 575.9px) {
@@ -157,11 +160,17 @@ const CardSubTitle = styled.div`
   line-height: 1.5;
   color: #c6c9e5;
   height: 80px;
+  @media(min-width:1200px){
+    height: 42px;
+  }
   @media screen and (max-width: 1199px) and (min-width: 992px) {
     height: 90px;
   }
   @media screen and (max-width: 991.9px) and (min-width: 768px) {
     height: 65px;
+  }
+  @media(max-width:375px) {
+    height: 50px;
   }
 `;
 const CardImage = styled.img`
