@@ -29,7 +29,7 @@ export default class Earn extends Component {
   componentDidMount = () => {
     axios
       .get(
-        "https://api.nomics.com/v1/currencies/ticker?key=faad65ad538a46ad1a3a66a3db9b6386&ids=BTC"
+        `https://api.nomics.com/v1/currencies/ticker?key=${process.env.REACT_APP_CUR_KEY}&ids=BTC`
       )
       .then((res) => {
         let btcInNaira = res.data["0"]["price"] * 500;
