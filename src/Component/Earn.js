@@ -8,11 +8,9 @@ export default class Earn extends Component {
     this.state = {
       number: 1,
       resultBTC: 0.00000871,
-      Naira: 70,
       Dollars: 0.14,
       resultDollars: 0.14,
       calcResult: "0.00000871",
-      BTCprice: 12000,
     };
   }
 
@@ -24,8 +22,8 @@ export default class Earn extends Component {
 
   calculateBtn = () => {
     this.setState({
-      calcResult: (this.state.number * this.state.calcResult).toFixed(8),
-      Naira: (this.state.Naira * this.state.number).toFixed(2),
+      calcResult: (this.state.number * this.state.resultBTC).toFixed(8),
+      resultDollars: (this.state.Dollars * this.state.number).toFixed(2),
     });
   };
   componentDidMount = () => {
@@ -72,14 +70,14 @@ export default class Earn extends Component {
                 <Output>
                   <p>Estimated 24 Hour Revenue</p>
                   <CalResult>
-                    {this.state.calcResult} BTC (₦ {this.state.Naira})
+                  {this.state.calcResult} BTC (${this.state.resultDollars})
                   </CalResult>
                 </Output>
               </InputSection>
               <SmallOutput>
                 <p>Estimated 24 Hour Revenue</p>
                 <CalResult>
-                  {this.state.calcResult} (₦ {this.state.Naira})
+                {this.state.calcResult} BTC (${this.state.resultDollars})
                 </CalResult>
               </SmallOutput>
             </div>

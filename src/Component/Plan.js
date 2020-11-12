@@ -155,6 +155,9 @@ const Card = styled.div`
   margin-right: 10px;
   padding-left: 10px;
   padding-right: 10px;
+  :hover{
+box-shadow:1px solid #eaeaea;
+  }
 `;
 const CardTitle = styled.div`
   font-size: 24px;
