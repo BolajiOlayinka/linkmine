@@ -7,10 +7,10 @@ export default class Earn extends Component {
     super();
     this.state = {
       number: 1,
-      resultBTC: 0.00000871,
-      Dollars: 0.14,
-      resultDollars: 0.14,
-      calcResult: "0.00000871",
+      resultBtc: 0.00000871,
+      Naira: 68.49,
+      resultNaira: 68.49,
+      calcResult: 0.00000871,
     };
   }
 
@@ -22,8 +22,8 @@ export default class Earn extends Component {
 
   calculateBtn = () => {
     this.setState({
-      calcResult: (this.state.number * this.state.resultBTC).toFixed(8),
-      resultDollars: (this.state.Dollars * this.state.number).toFixed(2),
+      calcResult: (this.state.number * this.state.resultBtc).toFixed(8),
+      resultNaira: (this.state.Naira * this.state.number).toFixed(2),
     });
   };
   componentDidMount = () => {
@@ -32,16 +32,12 @@ export default class Earn extends Component {
         "https://api.nomics.com/v1/currencies/ticker?key=faad65ad538a46ad1a3a66a3db9b6386&ids=BTC"
       )
       .then((res) => {
-        // console.log(res.data['0']['price'])
-        let calcHashRate = (30 / res.data["0"]["price"] / 24).toFixed(8);
-        let calcNaira = (
-          (calcHashRate * res.data["0"]["price"] * 500) /
-          24
-        ).toFixed(2);
+        let btcInNaira = res.data["0"]["price"] * 500;
+        const hashBTC = (68.49 / btcInNaira).toFixed(8);
         this.setState({
-          BTCprice: res.data["0"]["price"],
-          calcResult: calcHashRate,
-          Naira: calcNaira,
+          BTCprice: btcInNaira,
+          calcResult: hashBTC,
+          resultBtc: hashBTC,
         });
       })
       .catch((res) => {
@@ -70,14 +66,14 @@ export default class Earn extends Component {
                 <Output>
                   <p>Estimated 24 Hour Revenue</p>
                   <CalResult>
-                  {this.state.calcResult} BTC (${this.state.resultDollars})
+                    {this.state.calcResult} BTC (₦ {this.state.resultNaira})
                   </CalResult>
                 </Output>
               </InputSection>
               <SmallOutput>
                 <p>Estimated 24 Hour Revenue</p>
                 <CalResult>
-                {this.state.calcResult} BTC (${this.state.resultDollars})
+                  {this.state.calcResult} BTC (₦ {this.state.resultNaira})
                 </CalResult>
               </SmallOutput>
             </div>
