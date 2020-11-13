@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Header from "./Header";
 import Banner from "./Banner";
-import Earn from "./Earn";
+// import Earn from "./Earn";
 import Models from "./Models";
 import How from "./How";
 import Plan from "./Plan";
@@ -17,7 +17,7 @@ export default function Home() {
         
         <Banner />
       </Container>
-      <Earn />
+      {/* <Earn /> */}
       <Models />
       <How />
       <Plan />
