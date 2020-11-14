@@ -21,7 +21,11 @@ export default function Telegram() {
           <h2>Join to Get Access to the Latest Information </h2>
         </SectionOne>
         <SectionTwo>
-          <TelegramButton href="https://t.me/linkmineafrica" rel="noreferrer" target="_blank">
+          <TelegramButton
+            href="https://t.me/linkmineafrica"
+            rel="noreferrer"
+            target="_blank"
+          >
             {" "}
             Join{" "}
           </TelegramButton>
@@ -49,12 +53,18 @@ export default function Telegram() {
               shows higher performance.
             </RightParagraph>
             <ButtonContainer>
-            <StartButton href="https://linkmine.vip/auth/register" rel="noreferrer" target="_blank">Get Started Now</StartButton>
+              <StartButton
+                href="https://linkmine.vip/auth/register"
+                rel="noreferrer"
+                target="_blank"
+              >
+                Get Started Now
+              </StartButton>
             </ButtonContainer>
-            
           </div>
         </div>
       </QualityMining>
+      
       <Footer>
         <img src={Logo} alt="Logo" />
         <p>
@@ -64,9 +74,17 @@ export default function Telegram() {
           bitcoin can establish a link with bitcoin through the lowest cost and
           the most stable way.
         </p>
+        <FAQSec>
+      <Terms>Terms and Conditions Apply</Terms>
+        <FAQLink href="https://docs.google.com/document/d/1HaffCJu0LotLq-uJJ2Q8mvw7aU2bvLSQUAZVrTDwuJ0/edit" rel="noreferrer"
+                target="_blank" >FAQs</FAQLink>
+        
+      </FAQSec>
         <ScrollUp onClick={Scroll}>
           {" "}
-          <FontAwesomeIcon icon={faAngleUp} />
+          <span>
+            <FontAwesomeIcon icon={faAngleUp} />
+          </span>
         </ScrollUp>
       </Footer>
     </React.Fragment>
@@ -99,12 +117,11 @@ const Wrapper = styled.div`
     padding-right: 15px;
     padding-bottom: 60px;
   }
- 
 `;
 const TelegramImage = styled.img`
   opacity: 0.2;
   filter: alpha(opacity=20);
-  -moz-opacity:0.2;
+  -moz-opacity: 0.2;
   -khtml-opacity: 0.2;
   position: absolute;
   width: 250px;
@@ -127,17 +144,17 @@ const SectionOne = styled.div`
     p {
       font-size: 16px;
       line-height: 22px;
-      text-align:center;
-      width:80%;
-      margin:auto;
-      padding-bottom:30px;
+      text-align: center;
+      width: 80%;
+      margin: auto;
+      padding-bottom: 30px;
     }
     h2 {
       font-size: 28px;
       line-height: 36px;
       width: 100%;
       padding-bottom: 50px;
-      text-align:center;
+      text-align: center;
     }
   }
 `;
@@ -200,9 +217,9 @@ const RightParagraph = styled.div`
   font-size: 14px;
   color: white;
 `;
-const ButtonContainer = styled.div `
-text-align:center;
-`
+const ButtonContainer = styled.div`
+  text-align: center;
+`;
 const StartButton = styled.a`
   background: #00a8ff;
   border-radius: 30px;
@@ -229,7 +246,7 @@ const Footer = styled.div`
   padding-bottom: 30px;
   margin-top: 100px;
   text-align: center;
-
+  
   img {
     width: 210px;
     margin-bottom: 50px;
@@ -241,6 +258,7 @@ const Footer = styled.div`
     width: 58%;
     margin: auto;
   }
+
   @media (max-width: 425px) {
     p {
       width: 90%;
@@ -251,23 +269,32 @@ const Footer = styled.div`
       padding-bottom: 30px;
     }
   }
+  
 `;
 const ScrollUp = styled.button`
   background-color: var(--lightBlue);
+  position:fixed;
+  bottom:0;
+  right:0;
+  margin-bottom:30px;
   display: flex;
   align-items: center;
   color: white;
-  padding-left:15px;
-  padding-right:15px;
-  padding-top:20px;
-  padding-bottom:20px;
-  border-radius:5px;
-  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 5px;
+  margin-left: auto;
   margin-top: 20px;
   height: 30px;
   border-color: transparent;
   border: none;
   outline: 0;
+  -webkit-transform: rotate(-45deg); /* Safari and Chrome */
+  -moz-transform: rotate(-45deg); /* Firefox */
+  -o-transform: rotate(-45deg); /* Opera */
+  -ms-transform: rotate(-45deg); /* IE9 */
   :active {
     outline: 0;
     border: none;
@@ -278,4 +305,35 @@ const ScrollUp = styled.button`
     border: none;
     -moz-outline-style: none;
   }
+  :before{
+    
+  }
+  span {
+   display:inline-block;
+    -webkit-transform: rotate(45deg); /* Safari and Chrome */
+    -moz-transform: rotate(45deg); /* Firefox */
+    -o-transform: rotate(45deg); /* Opera */
+    -ms-transform: rotate(45deg); /* IE9 */
+  }
+  @media(min-width:1200px){
+    margin-right:30px;
+  }
 `;
+const FAQSec = styled.div `
+
+text-align:center;
+width:30%;
+margin:auto;
+`
+const FAQLink = styled.a `
+color:white;
+padding-top:5px;
+:hover{
+  color:var(--lightBlue);
+}
+`
+const Terms = styled.div `
+font-size:12px;
+color:white;
+padding-top:20px;
+`
