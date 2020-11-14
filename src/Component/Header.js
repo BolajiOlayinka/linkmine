@@ -21,30 +21,94 @@ export default function Header() {
           </Left>
 
           <Right>
-            <a href="https://linkmine.vip/" rel="noreferrer" target="_blank" >Home</a>
-            <a href="https://linkmine.vip/product-center" rel="noreferrer" target="_blank">Product Center</a>
-            <a href="https://linkmine.vip/financial-center" rel="noreferrer" target="_blank">Finacial Center</a>
-            <a href="https://linkmine.vip/wallet" rel="noreferrer" target="_blank">Wallet</a>
+            <a href="https://linkmine.vip/" rel="noreferrer" target="_blank">
+              Home
+            </a>
+            <a
+              href="https://linkmine.vip/product-center"
+              rel="noreferrer"
+              target="_blank"
+            >
+              Product Center
+            </a>
+            <a
+              href="https://linkmine.vip/financial-center"
+              rel="noreferrer"
+              target="_blank"
+            >
+              Finacial Center
+            </a>
+            <a
+              href="https://linkmine.vip/wallet"
+              rel="noreferrer"
+              target="_blank"
+            >
+              Wallet
+            </a>
             <Auth>
-              <Login href="https://linkmine.vip/auth/login" rel="noreferrer" target="_blank">Sign in</Login>
-              <Signup href="https://linkmine.vip/auth/register" rel="noreferrer" target="_blank">Sign up</Signup>
+              <Login
+                href="https://linkmine.vip/auth/login"
+                rel="noreferrer"
+                target="_blank"
+              >
+                Sign in
+              </Login>
+              <Signup
+                href="https://linkmine.vip/auth/register"
+                rel="noreferrer"
+                target="_blank"
+              >
+                Sign up
+              </Signup>
             </Auth>
           </Right>
         </NavWrapper>
         <SmallNavWrapper>
           <Auth>
-            <Login href="https://linkmine.vip/auth/login" rel="noreferrer" target="_blank">Sign in</Login>
-            <Signup href="https://linkmine.vip/auth/register" rel="noreferrer" target="_blank">Sign up</Signup>
+            <Login
+              href="https://linkmine.vip/auth/login"
+              rel="noreferrer"
+              target="_blank"
+            >
+              Sign in
+            </Login>
+            <Signup
+              href="https://linkmine.vip/auth/register"
+              rel="noreferrer"
+              target="_blank"
+            >
+              Sign up
+            </Signup>
           </Auth>
           <StyledFontAwesomeIcon icon={faBars} onClick={toggle} />
         </SmallNavWrapper>
       </Nav>
-      {!isOpen && (
+      {isOpen && (
         <SmallRight>
-          <a href="https://linkmine.vip/" rel="noreferrer" target="_blank">Home</a>
-          <a href="https://linkmine.vip/product-center" rel="noreferrer" target="_blank">Product Center</a>
-          <a href="https://linkmine.vip/financial-center" rel="noreferrer" target="_blank">Finacial Center</a>
-          <a href="https://linkmine.vip/wallet" rel="noreferrer" target="_blank">Wallet</a>
+          <a href="https://linkmine.vip/" rel="noreferrer" target="_blank">
+            Home
+          </a>
+          <a
+            href="https://linkmine.vip/product-center"
+            rel="noreferrer"
+            target="_blank"
+          >
+            Product Center
+          </a>
+          <a
+            href="https://linkmine.vip/financial-center"
+            rel="noreferrer"
+            target="_blank"
+          >
+            Finacial Center
+          </a>
+          <a
+            href="https://linkmine.vip/wallet"
+            rel="noreferrer"
+            target="_blank"
+          >
+            Wallet
+          </a>
         </SmallRight>
       )}
     </React.Fragment>

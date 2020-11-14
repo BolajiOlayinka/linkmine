@@ -76,7 +76,7 @@ export default function Telegram() {
         </p>
         <FAQSec>
       <Terms>Terms and Conditions Apply</Terms>
-        <FAQLink href="https://docs.google.com/document/d/1HaffCJu0LotLq-uJJ2Q8mvw7aU2bvLSQUAZVrTDwuJ0/edit" rel="noreferrer"
+        <FAQLink href="https://docs.google.com/document/d/1HaffCJu0LotLq-uJJ2Q8mvw7aU2bvLSQUAZVrTDwuJ0" rel="noreferrer"
                 target="_blank" >FAQs</FAQLink>
         
       </FAQSec>
@@ -305,9 +305,7 @@ const ScrollUp = styled.button`
     border: none;
     -moz-outline-style: none;
   }
-  :before{
-    
-  }
+  
   span {
    display:inline-block;
     -webkit-transform: rotate(45deg); /* Safari and Chrome */
@@ -317,6 +315,9 @@ const ScrollUp = styled.button`
   }
   @media(min-width:1200px){
     margin-right:30px;
+  }
+  @media(max-width:375px){
+    margin-right:5px;
   }
 `;
 const FAQSec = styled.div `
