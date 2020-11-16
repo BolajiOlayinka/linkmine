@@ -76,7 +76,7 @@ export default function Telegram() {
         </p>
         <FAQSec>
       <Terms>Terms and Conditions Apply</Terms>
-        <FAQLink href="https://docs.google.com/document/d/1HaffCJu0LotLq-uJJ2Q8mvw7aU2bvLSQUAZVrTDwuJ0" rel="noreferrer"
+        <FAQLink href="https://docs.google.com/document/d/1HaffCJu0LotLq-uJJ2Q8mvw7aU2bvLSQUAZVrTDwuJ0/edit?usp=sharing" rel="noreferrer"
                 target="_blank" >FAQs</FAQLink>
         
       </FAQSec>
