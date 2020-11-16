@@ -80,7 +80,10 @@ const SideTriangle = styled.div`
   height: 0;
   border-top: 200px solid transparent;
   border-right: 160px solid var(--mainAsh);
-  opacity: 6%;
+  opacity: 0.06;
+  filter: alpha(opacity=6);
+  -moz-opacity: 0.06;
+  -khtml-opacity: 0.06;
   border-bottom: 200px solid transparent;
   position: absolute;
   right: 0;
