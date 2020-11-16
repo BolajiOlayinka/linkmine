@@ -43,7 +43,8 @@ export default function How() {
                   width: "100%",
                   height: "100%",
                 }}
-                src="https://youtube.com/embed/0mVsB8b3N_4?autoplay=1&mute=1"
+                src="https://youtube.com/embed/I1XjhcwOs1U?autoplay=1&mute=1"
+                
                 frameBorder="0"
               />
             </div>
